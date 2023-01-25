@@ -17,7 +17,7 @@ public class citazioni {
             System.out.println(
                     "\nSi vuole leggere un'altra citazione? \nPremere 1 per effettuare una nuova selezione, \naltrimenti per concludere il programma premere 9\n");
             scelta2 = input.nextInt();
-        } while (scelta2 != 9);
+        } while (scelta2 == 1);
 
         input.close();
         System.out.println("\nProgramma Terminato\n");
