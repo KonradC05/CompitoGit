@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class startingPoint {
+public class citazioni {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -11,20 +11,8 @@ public class startingPoint {
             System.out.println(
                     "Quale citazione si vuole leggere? \n");
             scelta = input.nextInt();
-            switch (scelta) {
-                case 1:
-
-                    break;
-                case 2:
-
-                    break;
-                case 3:
-
-                    break;
-                default:
-                    break;
-            }
-            System.out.println(" ");
+            String cit = citazioneScelta(scelta);
+            System.out.println(cit);
 
             System.out.println(
                     "\nSi vuole leggere un'altra citazione? \nPremere 1 per effettuare una nuova selezione, altrimenti per concludere premere 9\n");
@@ -35,10 +23,23 @@ public class startingPoint {
         System.out.println("\nTermine Programma\n");
     }
 
-    private String citazione1() {
-        String citazione1;
-        citazione1 = "Yzma:\n Abbassa la leva Kronk!\n  L'altra leva!!";
-        return citazione1;
+    private String citazioneScelta(int scelta) {
+        String citazione;
+        switch (scelta) {
+            case 1:
+                citazione = "Yzma:\n    Abbassa la leva Kronk!\n    L'altra leva!!";
+                break;
+            case 2:
+                citazione = " ";
+                break;
+            case 3:
+                citazione = " ";
+                break;
+            default:
+                citazione = "Scar:\n    Sono circondato da un branco di Idioti!";
+                break;
+        }
+        return citazione;
     }
 }
 
